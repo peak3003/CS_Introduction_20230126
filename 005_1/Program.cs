@@ -1,5 +1,5 @@
 ﻿// С клавиатуры вводятся три числа. Найти максимальное из трех чисел
-// Вариант 1
+// Вариант 2
 int a, b, c, max;
 Console.Write("Введите а:");
 a = Convert.ToInt32(Console.ReadLine());
@@ -7,13 +7,26 @@ Console.Write("Введите b:");
 b = Convert.ToInt32(Console.ReadLine());
 Console.Write("Введите c:");
 c = Convert.ToInt32(Console.ReadLine());
-max = a;
-if (max < b)
+if (a > b)
 {
-  max = b;
+  if (a > c)
+  {
+    max = a;
+  }
+  else
+  {
+    max = c;
+  }
 }
-if (max < c)
+else
 {
-  max = c;
-} 
+  if (b > c)
+  {
+    max = b;
+  }
+  else
+  {
+    max = c;
+  }
+}
 Console.WriteLine($"max={max}");
