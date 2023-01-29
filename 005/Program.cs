@@ -15,5 +15,5 @@ if (max < b)
 if (max < c)
 {
   max = c;
-} 
-Console.WriteLine($"max={max}");
+}
+Console.WriteLine($"Максимальное из трех={max}");

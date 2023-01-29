@@ -12,4 +12,4 @@ else
 {
   max = b;
 }
-Console.WriteLine($"max={max}");
+Console.WriteLine($"Максимальное число={max}");
