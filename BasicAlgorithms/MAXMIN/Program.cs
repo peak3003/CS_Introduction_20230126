@@ -11,5 +11,5 @@ while (N != 0)
   if (digit<min) min=digit;
   N /= 10;// N=N/10;
 }
-  Console.WriteLine($"min={min} max={max}");
+  Console.WriteLine($"min={min} max={max}"); //строка интерполяции
 
