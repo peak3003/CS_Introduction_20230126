@@ -1,5 +1,8 @@
 ﻿// Напишите подпрограмму нахождения расстояния между двумя точками
 
+//сигнатура метода (подпрограммы)
+// double (double, double,double,double) - показывает тип возвращет и типы аргументов
+
 
 //тип Название(аргументы)
 
@@ -7,6 +10,14 @@
 double Distance(double x1,double y1,double x2,double y1)
 {
   return Math.Sqrt(Math.Pow(x1-x2,2+Math.Pow(y1-y2,2)));
+}
+
+//процедуры в C# нет, аналог метод void - ничего не возвращает
+// void() - сигнатура метода
+
+void Pause()
+{
+  Console.ReadKey();
 }
 
 
