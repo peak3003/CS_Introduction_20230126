@@ -1,5 +1,5 @@
 ﻿// 31. Вывести на экран кубы чисел от 1 до N
-
-int N=10;
-for(int i=1;i<=Т;i++)
-System.Console.WriteLine($"{i} {i*i*i}");
+Console.Write("Введите число N: ");
+int N = Convert.ToInt32(Console.ReadLine());
+for(int i=1;i<=N;i++)
+System.Console.WriteLine($"Для числа {i} кубом является {i*i*i}");
