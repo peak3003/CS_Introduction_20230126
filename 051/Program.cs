@@ -1,26 +1,13 @@
 ﻿// 51. С клавиатуры вводится число N. Затем вводятся N чисел. Определить сколько чисел больше 0 введено с клавиатуры
 
-
-namespace GeekBrains
-{
-  namespace Introduction
-  {
-    class Task051
+Console.Write("Введите кол-во элементов массива N: ");
+int N = Convert.ToInt32(Console.ReadLine());
+int k=0;
+int[] a = new int[N];
+    for(int i = 0; i < N; i++)
     {
-      static void Main()
-      {
-        int N = Convert.ToInt32(Console.ReadLine());
-        int k = 0;
-        for (int i = 0; i < N; i++)
-        {
-          int n = int.Parse(Console.ReadLine());
-          if (n > 0) k++;
-        }
-        System.Console.WriteLine(k);
-        //GeekBrains.Introduction.Task051.Main(); // полное название нашего метода Main
-      }
+        Console.Write($"A[{i}] = ");
+        a[i] = Convert.ToInt32(Console.ReadLine());
+        if (a[i]>0) k++;
     }
-  }
-
-
-}
+Console.WriteLine($"Чисел больше 0 = {k}");
