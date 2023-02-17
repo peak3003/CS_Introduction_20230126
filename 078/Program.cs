@@ -12,5 +12,6 @@ int Fib(int N)
 
 Console.Write("Введите N: ");
 int n = Convert.ToInt32(Console.ReadLine());
-//for (i=-10;i!=10;i++)
-    System.Console.WriteLine(Fib(n));
+System.Console.WriteLine($"Числа Фибоначчи до {n}:");
+for (int i=0;i!=n;i++)
+    System.Console.Write($"{Fib(i),4}");
